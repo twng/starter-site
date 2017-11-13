@@ -13,16 +13,15 @@ CSS and JS Sourcemaps
 Browser preview with live reload
 Image compression
 
-
-run `npm install` to install development dependencies.
-
+Folder structure
+----------------
 src folder: source files here: html, js, scss and static assets.
 
 public folder: miscellaneous files for deploying to live server eg. favicon, crossdomain.xml etc.
 
 
 CSS and SASS
-----
+------------
 Enter paths to any 3rd party SASS libraries (in node_modules) in the PATHS object in the gulpfile
 
 Update the COMPATIBILITY option in the PATHS object for css browser compatibility
@@ -45,14 +44,16 @@ Getting started
 ---------------
 
 run `npm install` to install development dependencies.
+This starter kit also comes with jquery, `npm uninstall jquery` if not required.
 
-
-run `npm run start` to start build the site and run the development server.
+run `npm run start` to build the site and run the development server.
 Site is served from dist.
 
 run `npm run build` to build the production version of the site. Files are compiled to dist.
 
 run `npm run clean` to clean the dist folder and clear the cache.
+
+
 
 To do:
 Update lint options for PRODUCTION.
