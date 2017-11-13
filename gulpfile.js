@@ -193,6 +193,7 @@ gulp.task('lint', function () {
 
 // Clean output directories
 gulp.task('clean', function() {
+    // clear image cache
     cache.clearAll();
     // delete everything inside dist but not dist itself
     return del([(PATHS.dist + '/**'), ('!'+ PATHS.dist)], {dot: false});
@@ -231,35 +232,3 @@ gulp.task('default', ['build'], function() {
     gulp.watch(PATHS.images.src, ['images']);
 
 });
-
-
-
-
-/*
-// Watch functions
-// create a task that ensures the 'html' task is complete before reloading browsers
-gulp.task('html-watch', ['html'], function (done) {
-    browserSync.reload();
-    done();
-});
-
-// create a task that ensures the 'scripts' task is complete before reloading browsers
-gulp.task('js-watch', ['scripts'], function (done) {
-    browserSync.reload();
-    done();
-});
-
-// Build task: build files for production and serve
-gulp.task('build', ['build:prod'], function() {
-    // start server
-    browserSync.init({
-        server: {
-            baseDir : [PATHS.deploy]
-        },
-        browser: ["chrome"]
-    });
-
-
-});
-
-*/
