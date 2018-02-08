@@ -1,26 +1,17 @@
 @import 'partials/partial';
 
-
-
-body {
-  h1 {
+h1, h2, h3 {
     font-family: sans-serif;
-    color: $dark-gray;
-  }
 }
 
-.fuck {
-  color: black;
+.red {
+    color: $my-red;
 }
 
-.bitch {
-  background-color: red;
+.green {
+    color: $my-green;
 }
 
-#mainbodydivid {
-  position: absolute;
-}
-
-.awesome {
-  //color: blue;
+.blue {
+    color: $my-blue;
 }
